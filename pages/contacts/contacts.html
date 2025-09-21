@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fukuro - Contacts</title>
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="./contacts.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Header -->
+
+      <header class="header">
+        <div class="header__container">
+          <a href="/" aria-label="Go to homepage" class="header__logo"
+            >FUKURO</a
+          >
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="../../index.html#mission"
+                  title="Go to Our Mission Block"
+                  aria-label="Our Mission - Click to read about Fukuro's mission"
+                  class="nav__link"
+                  >Our Mission</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="../../index.html#founders"
+                  title="Go to Founders Block"
+                  aria-label="Founders - Click to read about Fukuro's founders"
+                  class="nav__link"
+                  >Founders</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="../projects/projects.html"
+                  title="Go to Projects Page"
+                  aria-label="Projects - Click to see our recent projects"
+                  class="nav__link"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header__cta">
+            <a
+              href="contacts.html"
+              title="Go to Contact Page"
+              aria-label="Contact - Click to visit contact page"
+              class="header__cta-button button button--secondary"
+              >Contact</a
+            >
+            <a
+              href="../signup/signup.html"
+              title="Go to Sign Up Page"
+              aria-label="Sign Up - Click to go to sign up page"
+              class="header__cta-button button"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- Banner Section -->
+
+      <section class="banner-block">
+        <div class="container banner-block__container">
+          <div class="banner-block__headline">
+            <h2 class="banner-block__title">Contact</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section class="contact-block">
+        <div class="container contact-block__container">
+          <form class="contact-block__form" action="" method="POST" novalidate>
+            <!-- Grouped Personal Information -->
+            <fieldset class="contact-block__personal-info">
+              <legend>Personal Information</legend>
+
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" required />
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="age">Age</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="0"
+                max="120"
+                required
+              />
+
+              <label for="education">Education</label>
+              <select id="education" name="education" required>
+                <option value="">Select your education</option>
+                <option value="complete">Complete</option>
+                <option value="incomplete">Incomplete</option>
+                <option value="higher">Higher</option>
+                <option value="professional">Professional</option>
+              </select>
+
+              <label for="interests">Interests</label>
+              <select
+                id="interests"
+                name="interests"
+                multiple
+                size="4"
+                required
+              >
+                <option value="scientist">Scientist</option>
+                <option value="investor">Investor</option>
+                <option value="promoter">Promoter</option>
+                <option value="civil_servant">Civil Servant</option>
+              </select>
+            </fieldset>
+
+            <!-- Grouped Feedback -->
+
+            <fieldset class="contact-block__feedback">
+              <legend>Feedback</legend>
+
+              <!-- Feedback Purpose -->
+
+              <label for="purpose">Feedback Purpose</label>
+              <select id="purpose" name="purpose" required>
+                <option value="">Select a purpose</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="complaint">
+                  Complaint about copyright infringement
+                </option>
+                <option value="suggestion">Suggestion</option>
+                <option value="error_report">Error report</option>
+              </select>
+
+              <!-- Detailed Text -->
+              <label for="details">Details</label>
+              <textarea
+                id="details"
+                name="details"
+                maxlength="500"
+                rows="5"
+                cols="40"
+                style="max-width: 100%; max-height: 200px"
+              ></textarea>
+            </fieldset>
+
+            <!-- Consent -->
+            <div class="contact-block__consent">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent"
+                >I agree to the processing of my information</label
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Feedback</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="/" aria-label="Go to homepage"> FUKURO </a>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="pages/projects/projects.html" class="footer__nav-link"
+                  >Projects</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="#mission" class="footer__nav-link">Our Mission</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#founders" class="footer__nav-link">Founders</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contact Block -->
+          <address class="footer__contact" aria-label="Contact information">
+            <p class="footer__contact-item">
+              <strong>Address:</strong> 16 Ivana Mazepy St, Fastiv, Ukraine
+            </p>
+            <p class="footer__contact-item">
+              <strong>Phone:</strong>
+              <a href="tel:+380977367071" class="footer__contact-link"
+                >+38 (097) 736-70-71</a
+              >
+            </p>
+            <p class="footer__contact-item">
+              <strong>Email:</strong>
+              <a
+                href="mailto:fe.anna.androschuk@gmail.com"
+                class="footer__contact-link"
+                >fe.anna.androschuk@gmail.com</a
+              >
+            </p>
+            <p class="footer__contact-item">
+              <strong>GitHub:</strong>
+              <a
+                href="https://github.com/anderzerfall"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__contact-link"
+                >github.com/AnderZerfall</a
+              >
+            </p>
+          </address>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

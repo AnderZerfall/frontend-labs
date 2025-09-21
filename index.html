@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUKURO</title>
+     <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Header -->
+
+      <header class="header">
+        <div class="header__container">
+        <a href="/" aria-label="Go to homepage" class="header__logo">FUKURO</a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="#mission"
+                  title="Go to Our Mission Block"
+                  aria-label="Our Mission - Click to read about Fukuro's mission"
+                  class="nav__link"
+                  >Our Mission</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#founders"
+                  title="Go to Founders Block"
+                  aria-label="Founders - Click to read about Fukuro's founders"
+                  class="nav__link"
+                  >Founders</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="/pages/projects/projects.html" 
+                  title="Go to Projects Page"
+                  aria-label="Projects - Click to see our recent projects"
+                  class="nav__link"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header__cta">
+            <a
+              href="/pages/contacts/contacts.html" 
+              title="Go to Contact Page"
+              aria-label="Contact - Click to visit contact page"
+              class="header__cta-button button button--secondary"
+              >Contact</a
+            >
+            <a
+             href="/pages/signup/signup.html" 
+              title="Go to Sign Up Page"
+              aria-label="Sign Up - Click to go to sign up page"
+              class="header__cta-button button"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section for task 1-->
+
+      <section class="hero-block">
+        <div class="container hero-block__container">
+          <div class="hero-block__headline">
+            <h1 class="hero-block__title">FUKURO</h1>
+            <p class="hero-block__subtitle">
+              Your gateway to creativity and fun!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Section for task 2 -->
+
+      <section class="mission-block" id="mission">
+        <div class="container mission-block__container">
+          <h2 class="mission-block__title">Our Mission</h2>
+          <article class="mission-block__cards">
+            <div class="card mission-block__card">
+              <h3 class="card__title">Mission 1</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                assumenda.
+              </p>
+              <div class="image-wrapper card__image">
+                <img
+                  src="/assets/images/icons/mission/star.svg"
+                  alt="Doodly Do Logo"
+                  class="image-wrapper__image mission-block__img"
+                />
+              </div>
+            </article>
+            <article class="card mission-block__card">
+              <h3 class="card__title">Mission 2</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                assumenda.
+              </p>
+              <div class="image-wrapper card__image">
+                <img
+                  src="/assets/images/icons/mission/github.svg"
+                  alt="Doodly Do Logo"
+                  class="image-wrapper__image mission-block__img"
+                />
+              </div>
+            </article>
+            <article class="card mission-block__card">
+              <h3 class="card__title">Mission 3</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                assumenda.
+              </p>
+              <div class="image-wrapper card__image">
+                <img
+                  src="/assets/images/icons/mission/lock.svg"
+                  alt="Doodly Do Logo"
+                  class="image-wrapper__image mission-block__img"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founders Section for task 3 -->
+
+      <section class="founders-block" id="founders">
+        <div class="container founders-block__container">
+          <h2 class="founders-block__title">Our Founders</h2>
+          <table class="founders__table">
+            <thead>
+              <tr>
+                <th class="founders__header" scope="col">
+                  <img
+                    src="https://avatars.githubusercontent.com/anderzerfall"
+                    alt="Ander's Avatar"
+                    class="founders__avatar"
+                  />
+                  <div class="founders__name">Ander - FUKURO</div>
+                </th>
+                <th class="founders__header" scope="col">
+                  <img
+                    src="https://avatars.githubusercontent.com/kirkus26"
+                    alt="Kirkus26's Avatar"
+                    class="founders__avatar"
+                  />
+                  <div class="founders__name">Kirkus26 - Kyrylo</div>
+                </th>
+                <th class="founders__header" scope="col">
+                  <img
+                    src="https://avatars.githubusercontent.com/chainmeJB"
+                    alt="ChainmeJB's Avatar"
+                    class="founders__avatar"
+                  />
+                  <div class="founders__name">ChainmeJB - Yulia</div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="founders__desc">
+                  Passionate about innovative design.
+                </td>
+                <td class="founders__desc">Expert in backend development.</td>
+                <td class="founders__desc">
+                  Full-stack developer and UX enthusiast.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="founders__role">Lead Designer</td>
+                <td class="founders__role">Backend Engineer</td>
+                <td class="founders__role">Project Manager & Developer</td>
+              </tr>
+
+              <tr>
+                <td
+                  class="founders__stack"
+                  aria-label="Tech stack for Alice Johnson"
+                >
+                  <img
+                    src="/assets/images/icons/stack/html.svg"
+                    alt="HTML5"
+                    class="founders__icon"
+                  />
+                  <img
+                     src="/assets/images/icons/stack/react.svg"
+                    alt="React"
+                    class="founders__icon"
+                  />
+                  <img
+                    src="/assets/images/icons/stack/figma.svg"
+                    alt="Figma"
+                    class="founders__icon"
+                  />
+                </td>
+                <td
+                  class="founders__stack"
+                  aria-label="Tech stack for Bob Smith"
+                >
+                  <img
+                    src="/assets/images/icons/stack/nodejs.svg"
+                    alt="Node.js"
+                    class="founders__icon"
+                  />
+                  <img
+                    src="/assets/images/icons/stack/mongodb.svg"
+                    alt="MongoDB"
+                    class="founders__icon"
+                  />
+                  <img
+                    src="/assets/images/icons/stack/docker.svg"
+                    alt="Docker"
+                    class="founders__icon"
+                  />
+                </td>
+                <td
+                  class="founders__stack"
+                  aria-label="Tech stack for Carol Lee"
+                >
+                  <img
+                    src="/assets/images/icons/stack/nextjs.svg"
+                    alt="React"
+                    class="founders__icon"
+                  />
+                  <img
+                    src="/assets/images/icons/stack/js.svg"
+                    alt="JavaScript"
+                    class="founders__icon"
+                  />
+                  <img
+                    src="/assets/images/icons/stack/aws.svg"
+                    alt="AWS"
+                    class="founders__icon"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="/" aria-label="Go to homepage">
+              FUKURO
+            </a>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="pages/projects/projects.html" class="footer__nav-link">Projects</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#mission" class="footer__nav-link">Our Mission</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#founders" class="footer__nav-link">Founders</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contact Block -->
+          <address class="footer__contact" aria-label="Contact information">
+            <p class="footer__contact-item">
+              <strong>Address:</strong> 16 Ivana Mazepy St, Fastiv, Ukraine
+            </p>
+            <p class="footer__contact-item">
+              <strong>Phone:</strong>
+              <a href="tel:+380977367071" class="footer__contact-link"
+                >+38 (097) 736-70-71</a
+              >
+            </p>
+            <p class="footer__contact-item">
+              <strong>Email:</strong>
+              <a
+                href="mailto:fe.anna.androschuk@gmail.com"
+                class="footer__contact-link"
+                >fe.anna.androschuk@gmail.com</a
+              >
+            </p>
+            <p class="footer__contact-item">
+              <strong>GitHub:</strong>
+              <a
+                href="https://github.com/anderzerfall"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__contact-link"
+                >github.com/AnderZerfall</a
+              >
+            </p>
+          </address>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
