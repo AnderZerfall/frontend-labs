@@ -1,0 +1,15 @@
+.banner-block {
+    margin-bottom: var(--spacing--2x);
+}
+.contact-block__form {
+ display: flex;
+ flex-direction: column;
+ gap: var(--spacing--4x);
+}
+
+.contact-block__form-group {
+ display: flex;
+ flex-direction: column;
+ gap: var(--spacing--2x);
+ padding: var(--spacing--4x);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUKURO</title>
-     <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
   <body>
     <main class="main">
@@ -12,7 +12,9 @@
 
       <header class="header">
         <div class="header__container">
-        <a href="/" aria-label="Go to homepage" class="header__logo">FUKURO</a>
+          <a href="/" aria-label="Go to homepage" class="header__logo"
+            >FUKURO</a
+          >
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -35,7 +37,7 @@
               </li>
               <li class="nav__item">
                 <a
-                  href="/pages/projects/projects.html" 
+                  href="/pages/projects/projects.html"
                   title="Go to Projects Page"
                   aria-label="Projects - Click to see our recent projects"
                   class="nav__link"
@@ -46,17 +48,17 @@
           </nav>
           <div class="header__cta">
             <a
-              href="/pages/contacts/contacts.html" 
+              href="/pages/contacts/contacts.html"
               title="Go to Contact Page"
               aria-label="Contact - Click to visit contact page"
               class="header__cta-button button button--secondary"
               >Contact</a
             >
             <a
-             href="/pages/signup/signup.html" 
+              href="/pages/signup/signup.html"
               title="Go to Sign Up Page"
               aria-label="Sign Up - Click to go to sign up page"
-              class="header__cta-button button"
+              class="header__cta-button button button--primary"
               >Sign Up</a
             >
           </div>
@@ -65,7 +67,7 @@
 
       <!-- Hero Section for task 1-->
 
-      <section class="hero-block">
+      <section class="content-block hero-block">
         <div class="container hero-block__container">
           <div class="hero-block__headline">
             <h1 class="hero-block__title">FUKURO</h1>
@@ -78,16 +80,18 @@
 
       <!-- Mission Section for task 2 -->
 
-      <section class="mission-block" id="mission">
+      <section class="content-block mission-block" id="mission">
         <div class="container mission-block__container">
           <h2 class="mission-block__title">Our Mission</h2>
-          <article class="mission-block__cards">
-            <div class="card mission-block__card">
-              <h3 class="card__title">Mission 1</h3>
-              <p class="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-                assumenda.
-              </p>
+          <div class="mission-block__cards">
+            <article class="card mission-block__card">
+              <div class="card__text-block">
+                <h3 class="card__title">Mission 1</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magni, assumenda.
+                </p>
+              </div>
               <div class="image-wrapper card__image">
                 <img
                   src="/assets/images/icons/mission/star.svg"
@@ -97,11 +101,14 @@
               </div>
             </article>
             <article class="card mission-block__card">
-              <h3 class="card__title">Mission 2</h3>
-              <p class="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-                assumenda.
-              </p>
+              <div class="card__text-block">
+                <h3 class="card__title">Mission 2</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magni, assumenda.
+                </p>
+              </div>
+
               <div class="image-wrapper card__image">
                 <img
                   src="/assets/images/icons/mission/github.svg"
@@ -111,11 +118,14 @@
               </div>
             </article>
             <article class="card mission-block__card">
-              <h3 class="card__title">Mission 3</h3>
-              <p class="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-                assumenda.
-              </p>
+              <div class="card__text-block">
+                <h3 class="card__title">Mission 3</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magni, assumenda.
+                </p>
+              </div>
+
               <div class="image-wrapper card__image">
                 <img
                   src="/assets/images/icons/mission/lock.svg"
@@ -130,35 +140,62 @@
 
       <!-- Founders Section for task 3 -->
 
-      <section class="founders-block" id="founders">
+      <section class="content-block founders-block" id="founders">
         <div class="container founders-block__container">
           <h2 class="founders-block__title">Our Founders</h2>
           <table class="founders__table">
             <thead>
               <tr>
                 <th class="founders__header" scope="col">
-                  <img
-                    src="https://avatars.githubusercontent.com/anderzerfall"
-                    alt="Ander's Avatar"
-                    class="founders__avatar"
-                  />
+                  <div class="image-wrapper founders__avatar">
+                    <img
+                      src="https://avatars.githubusercontent.com/anderzerfall"
+                      alt="Ander's Avatar"
+                    />
+                  </div>
+
                   <div class="founders__name">Ander - FUKURO</div>
                 </th>
+
                 <th class="founders__header" scope="col">
-                  <img
-                    src="https://avatars.githubusercontent.com/kirkus26"
-                    alt="Kirkus26's Avatar"
-                    class="founders__avatar"
-                  />
+                  <div class="image-wrapper founders__avatar">
+                    <img
+                      src="https://avatars.githubusercontent.com/chainmeJB"
+                      alt="ChainmeJB's Avatar"
+                    />
+                  </div>
+
+                  <div class="founders__name">ChainmeJB - Yulia</div>
+                </th>
+                <th class="founders__header" scope="col">
+                  <div class="image-wrapper founders__avatar">
+                    <img
+                      src="https://avatars.githubusercontent.com/kirkus26"
+                      alt="Kirkus26's Avatar"
+                    />
+                  </div>
+
                   <div class="founders__name">Kirkus26 - Kyrylo</div>
                 </th>
                 <th class="founders__header" scope="col">
-                  <img
-                    src="https://avatars.githubusercontent.com/chainmeJB"
-                    alt="ChainmeJB's Avatar"
-                    class="founders__avatar"
-                  />
-                  <div class="founders__name">ChainmeJB - Yulia</div>
+                  <div class="image-wrapper founders__avatar">
+                    <img
+                      src="https://avatars.githubusercontent.com/chainmeJB"
+                      alt="Chertnn's Avatar"
+                    />
+                  </div>
+
+                  <div class="founders__name">Cherttn - Kira</div>
+                </th>
+                <th class="founders__header" scope="col">
+                  <div class="image-wrapper founders__avatar">
+                    <img
+                      src="https://avatars.githubusercontent.com/chainmeJB"
+                      alt="ConsWho's Avatar"
+                    />
+                  </div>
+
+                  <div class="founders__name">ConsWho - Nikita</div>
                 </th>
               </tr>
             </thead>
@@ -166,18 +203,28 @@
             <tbody>
               <tr>
                 <td class="founders__desc">
-                  Passionate about innovative design.
+                  "Omg, it's a shiny button! Let me just take it..."
                 </td>
-                <td class="founders__desc">Expert in backend development.</td>
+
                 <td class="founders__desc">
-                  Full-stack developer and UX enthusiast.
+                  The chillest project manager you'll ever meet.
+                </td>
+                <td class="founders__desc">
+                  Pretends to know everything, yet, knows nothing
+                </td>
+                <td class="founders__desc">
+                  Passionate about customer satisfaction.
+                </td>
+                <td class="founders__desc">
+                  "Best employee of the month" - that his call
                 </td>
               </tr>
 
               <tr>
-                <td class="founders__role">Lead Designer</td>
-                <td class="founders__role">Backend Engineer</td>
+                <td class="founders__role">Team Lead & Developer</td>
+
                 <td class="founders__role">Project Manager & Developer</td>
+                <td class="founders__role" colspan="3">Support Managers</td>
               </tr>
 
               <tr>
@@ -185,61 +232,52 @@
                   class="founders__stack"
                   aria-label="Tech stack for Alice Johnson"
                 >
-                  <img
-                    src="/assets/images/icons/stack/html.svg"
-                    alt="HTML5"
-                    class="founders__icon"
-                  />
-                  <img
-                     src="/assets/images/icons/stack/react.svg"
-                    alt="React"
-                    class="founders__icon"
-                  />
-                  <img
-                    src="/assets/images/icons/stack/figma.svg"
-                    alt="Figma"
-                    class="founders__icon"
-                  />
+                  <div class="founders__icons">
+                    <img
+                      src="/assets/images/icons/stack/html.svg"
+                      alt="HTML5"
+                      class="founders__icon"
+                    />
+                    <img
+                      src="/assets/images/icons/stack/react.svg"
+                      alt="React"
+                      class="founders__icon"
+                    />
+                    <img
+                      src="/assets/images/icons/stack/js.svg"
+                      alt="JavaScript"
+                      class="founders__icon"
+                    />
+                  </div>
                 </td>
                 <td
                   class="founders__stack"
                   aria-label="Tech stack for Bob Smith"
                 >
-                  <img
-                    src="/assets/images/icons/stack/nodejs.svg"
-                    alt="Node.js"
-                    class="founders__icon"
-                  />
-                  <img
-                    src="/assets/images/icons/stack/mongodb.svg"
-                    alt="MongoDB"
-                    class="founders__icon"
-                  />
-                  <img
-                    src="/assets/images/icons/stack/docker.svg"
-                    alt="Docker"
-                    class="founders__icon"
-                  />
+                  <div class="founders__icons">
+                    <img
+                      src="/assets/images/icons/stack/aws.svg"
+                      alt="AWS"
+                      class="founders__icon"
+                    />
+                    <img
+                      src="/assets/images/icons/stack/mongodb.svg"
+                      alt="MongoDB"
+                      class="founders__icon"
+                    />
+                    <img
+                      src="/assets/images/icons/stack/docker.svg"
+                      alt="Docker"
+                      class="founders__icon"
+                    />
+                  </div>
                 </td>
                 <td
                   class="founders__stack"
                   aria-label="Tech stack for Carol Lee"
+                  colspan="3"
                 >
-                  <img
-                    src="/assets/images/icons/stack/nextjs.svg"
-                    alt="React"
-                    class="founders__icon"
-                  />
-                  <img
-                    src="/assets/images/icons/stack/js.svg"
-                    alt="JavaScript"
-                    class="founders__icon"
-                  />
-                  <img
-                    src="/assets/images/icons/stack/aws.svg"
-                    alt="AWS"
-                    class="founders__icon"
-                  />
+                  <div class="founders__icons"></div>
                 </td>
               </tr>
             </tbody>
@@ -251,18 +289,17 @@
 
       <footer class="footer">
         <div class="container footer__container">
-          <!-- Logo -->
           <div class="footer__logo">
-            <a href="/" aria-label="Go to homepage">
-              FUKURO
-            </a>
+            <a href="/" aria-label="Go to homepage"> FUKURO </a>
           </div>
 
           <!-- Navigation -->
           <nav class="footer__nav" aria-label="Footer navigation">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="pages/projects/projects.html" class="footer__nav-link">Projects</a>
+                <a href="pages/projects/projects.html" class="footer__nav-link"
+                  >Projects</a
+                >
               </li>
               <li class="footer__nav-item">
                 <a href="#mission" class="footer__nav-link">Our Mission</a>

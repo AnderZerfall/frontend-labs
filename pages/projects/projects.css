@@ -1,0 +1,38 @@
+.projects-block__container {
+  padding: 0;
+}
+
+.projects-block__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing--8x);
+  align-items: center;
+}
+
+.projects-block__card {
+  flex: 1;
+  width: 100%;
+  gap: var(--spacing--8x);
+  justify-content: space-between;
+  align-items: center;
+  max-height: none;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing--2x);
+}
+
+.card__list {
+  padding-left: var(--spacing--2x);
+}
+
+.card__image {
+  max-width: var(--size--10x);
+  height: auto;
+  border-radius: var(--spacing--2x);
+  overflow: hidden;
+  border: 2px solid var(--color-accent);
+  box-shadow: var(--spacing--2x) var(--spacing--2x)0 var(--color-accent);
+}

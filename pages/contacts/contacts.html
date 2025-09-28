@@ -59,7 +59,7 @@
               href="../signup/signup.html"
               title="Go to Sign Up Page"
               aria-label="Sign Up - Click to go to sign up page"
-              class="header__cta-button button"
+              class="header__cta-button button button--primary"
               >Sign Up</a
             >
           </div>
@@ -68,7 +68,7 @@
 
       <!-- Banner Section -->
 
-      <section class="banner-block">
+      <section class="content-block banner-block">
         <div class="container banner-block__container">
           <div class="banner-block__headline">
             <h2 class="banner-block__title">Contact</h2>
@@ -78,26 +78,27 @@
 
       <!-- Contact Section -->
 
-      <section class="contact-block">
+      <section class="content-block contact-block">
         <div class="container contact-block__container">
           <form class="contact-block__form" action="" method="POST" novalidate>
             <!-- Grouped Personal Information -->
-            <fieldset class="contact-block__personal-info">
+            <fieldset class="contact-block__form-group contact-block__personal-info">
               <legend>Personal Information</legend>
 
               <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" name="fullName" required />
+              <input type="text" id="fullName" placeholder="John Doe" name="fullName" required />
 
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
 
               <label for="age">Age</label>
               <input
                 type="number"
                 id="age"
                 name="age"
+                placeholder="24"
                 min="0"
-                max="120"
+                max="100"
                 required
               />
 
@@ -127,7 +128,7 @@
 
             <!-- Grouped Feedback -->
 
-            <fieldset class="contact-block__feedback">
+            <fieldset class="contact-block__form-group contact-block__feedback">
               <legend>Feedback</legend>
 
               <!-- Feedback Purpose -->
@@ -150,6 +151,7 @@
                 name="details"
                 maxlength="500"
                 rows="5"
+                placeholder="Provide more details here..."
                 cols="40"
                 style="max-width: 100%; max-height: 200px"
               ></textarea>
@@ -164,7 +166,7 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit">Submit Feedback</button>
+            <button type="submit" class="contact-block__button button button--accent">Submit Feedback</button>
           </form>
         </div>
       </section>
