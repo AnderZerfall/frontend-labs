@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUKURO</title>
     <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="main">
@@ -90,7 +94,7 @@
           <div class="hero-block__headline">
             <h1 class="hero-block__title">FUKURO</h1>
             <p class="hero-block__subtitle">
-              Your gateway to creativity and fun!
+              ⭐ Your gateway to creativity and fun! ⭐
             </p>
           </div>
         </div>
@@ -154,11 +158,21 @@
             </article>
           </div>
         </div>
+
+        <div class="mission-block__emoji-block">
+          <div class="mission-block__emoji-mask"></div>
+          <div class="mission-block__emoji mission-block__emoji--first">
+            🛡️ 🌐 🤖 💻 🔐
+          </div>
+          <div class="mission-block__emoji mission-block__emoji--second">
+            🛡️ 🌐 🤖 💻 🔐
+          </div>
+        </div>
       </section>
 
       <!-- Founders Section for task 3 -->
 
-      <section class="content-block founders-block" id="founders">
+      <section class="content-block founders-block" id="founders" tabindex="0">
         <div class="container founders-block__container">
           <h2 class="founders-block__title">Our Founders</h2>
           <table class="founders__table">
@@ -221,20 +235,40 @@
             <tbody>
               <tr>
                 <td class="founders__desc">
-                  "Omg, it's a shiny button! Let me just take it..."
+                  <i
+                    ><span class="card__subtitle"
+                      >"Omg, it's a shiny button! Let me just take it..."</span
+                    >
+                  </i>
                 </td>
 
                 <td class="founders__desc">
-                  The chillest project manager you'll ever meet.
+                  <i
+                    ><span class="card__subtitle"
+                      >The chillest project manager you'll ever meet</span
+                    ></i
+                  >
                 </td>
                 <td class="founders__desc">
-                  Pretends to know everything, yet, knows nothing
+                  <i
+                    ><span class="card__subtitle"
+                      >Pretends to know everything, yet, knows nothing</span
+                    ></i
+                  >
                 </td>
                 <td class="founders__desc">
-                  Passionate about customer satisfaction.
+                  <i
+                    ><span class="card__subtitle"
+                      >Passionate about customer satisfaction.</span
+                    ></i
+                  >
                 </td>
                 <td class="founders__desc">
-                  "Best employee of the month" - that his call
+                  <i
+                    ><span class="card__subtitle"
+                      >"Best employee of the month" - that his call</span
+                    ></i
+                  >
                 </td>
               </tr>
 
@@ -329,17 +363,25 @@
 
           <!-- Navigation -->
           <nav class="footer__nav" aria-label="Footer navigation">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="pages/projects/projects.html" class="footer__nav-link"
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="pages/projects/projects.html" class="nav__link"
                   >Projects</a
                 >
               </li>
-              <li class="footer__nav-item">
-                <a href="#mission" class="footer__nav-link">Our Mission</a>
+              <li class="nav__item">
+                <a href="#mission" class="nav__link">Our Mission</a>
               </li>
-              <li class="footer__nav-item">
-                <a href="#founders" class="footer__nav-link">Founders</a>
+              <li class="nav__item">
+                <a href="#founders" class="nav__link">Founders</a>
+              </li>
+              <li class="nav__item">
+                <a href="#reviews" class="nav__link">Reviews</a>
+              </li>
+              <li class="nav__item">
+                <a href="pages/profile/profile.html" class="nav__link"
+                  >Profile</a
+                >
               </li>
             </ul>
           </nav>
@@ -347,16 +389,19 @@
           <!-- Contact Block -->
           <address class="footer__contact" aria-label="Contact information">
             <p class="footer__contact-item">
-              <strong>Address:</strong> 16 Ivana Mazepy St, Fastiv, Ukraine
+              📍
+              <a href="https://goo.gl/maps/example" class="footer__contact-link"
+                >16 Ivana Mazepy St, Fastiv, Ukraine</a
+              >
             </p>
             <p class="footer__contact-item">
-              <strong>Phone:</strong>
+              📞
               <a href="tel:+380977367071" class="footer__contact-link"
                 >+38 (097) 736-70-71</a
               >
             </p>
             <p class="footer__contact-item">
-              <strong>Email:</strong>
+              📩
               <a
                 href="mailto:fe.anna.androschuk@gmail.com"
                 class="footer__contact-link"
@@ -364,7 +409,7 @@
               >
             </p>
             <p class="footer__contact-item">
-              <strong>GitHub:</strong>
+              😺
               <a
                 href="https://github.com/anderzerfall"
                 target="_blank"

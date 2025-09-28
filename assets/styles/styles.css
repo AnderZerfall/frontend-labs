@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: var(--font-size);
   line-height: 1.25;
   margin: 0;
@@ -42,6 +42,7 @@ h2 {
 }
 
 /*  Lab 2 Task 2.3 Makes titles of the projects bigger  and bolder */
+
 h3 {
   font-size: var(--font-size--2x);
 }
@@ -70,6 +71,8 @@ textarea::placeholder {
   padding: 0 var(--spacing--8x) var(--spacing--4x);
 }
 
+/*  Lab 2 Task 1.2 Add inner padding, remove margin from mission block (container) */
+
 .container {
   margin: 0 auto;
   display: flex;
@@ -85,6 +88,7 @@ textarea::placeholder {
   font-size: var(--font-size);
   border-radius: var(--spacing);
   cursor: pointer;
+  font-weight: 500;
 }
 
 .button--accent {
@@ -95,12 +99,24 @@ textarea::placeholder {
 .button--primary {
   background-color: var(--color-primary);
   color: var(--color-text--inv);
+  transition: all 0.3s ease-in-out;
 }
 
 .button--secondary {
   box-shadow: inset 0 0 0 2px var(--color-primary);
 
   color: var(--color-text--accent);
+  transition: all 0.3s ease-in-out;
+}
+
+.button--primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text--accent);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text--inv);
 }
 
 /*  Lab 2 Task 2.1 Make logo fixed on top.
@@ -139,6 +155,16 @@ Works almost the same as fixed anyway */
   gap: var(--spacing--4x);
 }
 
+.nav__item {
+  color: var(--color-text);
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+}
+
+.nav__item:hover {
+  color: var(--color-primary);
+}
+
 .content-block {
   display: flex;
   flex-direction: column;
@@ -158,6 +184,11 @@ Works almost the same as fixed anyway */
   margin: var(--spacing--8x) 0;
 }
 
+.hero-block__container {
+  position: relative;
+  min-height: var(--size--12x);
+}
+
 .hero-block__container,
 .banner-block__container {
   background-color: var(--color-accent);
@@ -165,8 +196,74 @@ Works almost the same as fixed anyway */
   border-radius: var(--spacing--2x);
 }
 
+/*  Lab 2 Task 1.1 Position absolute for the logo, 0 from top */
+
 .hero-block__headline {
-  margin: var(--spacing--32x) 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.hero-block__title {
+  position: relative;
+  -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.hero-block__title::after {
+  content: "FUKURO";
+  display: block;
+  position: absolute;
+  color: transparent;
+  top: var(--spacing--2x);
+}
+
+.hero-block__title::before {
+  content: "·";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-text-stroke: none;
+  transform: translateX(-80%) translateY(-2%) scale(0.8);
+  animation: eye-moving 3s ease-in-out infinite 1s;
+}
+
+@keyframes eye-moving {
+  0% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
+  45% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
+  50% {
+    transform: translateX(-60%) translateY(-2%) scale(0.8);
+  }
+  60% {
+    transform: translateX(-60%) translateY(-2%) scale(0.8);
+  }
+  65% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
+
+  70% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
+
+  75% {
+    transform: translateX(-100%) translateY(-2%) scale(0.8);
+  }
+
+  80% {
+    transform: translateX(-100%) translateY(-2%) scale(0.8);
+  }
+
+  85% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
+  100% {
+    transform: translateX(-80%) translateY(-2%) scale(0.8);
+  }
 }
 
 .mission-block__container,
@@ -192,7 +289,7 @@ Works almost the same as fixed anyway */
 .card {
   flex: 1;
   display: flex;
-  padding: var(--spacing--2x);
+  padding: var(--spacing--4x);
   border-radius: var(--spacing);
 }
 
@@ -213,12 +310,16 @@ Works almost the same as fixed anyway */
   background-color: var(--color-secondary);
   overflow: hidden;
   min-width: var(--size--2x);
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.mission-block .card__text-block {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
+.mission-block .card:hover {
+  border: 2px solid var(--color-accent);
+  color: var(--color-primary);
+  z-index: 2;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px var(--color-accent);
 }
 
 .mission-block .card__image {
@@ -227,6 +328,75 @@ Works almost the same as fixed anyway */
   flex: 0 0 250px;
   right: calc(-1 * var(--spacing--2x));
   bottom: calc(-1 * var(--spacing--4x));
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.mission-block .card:hover .card__image {
+  filter: grayscale(0);
+}
+
+.mission-block .card__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.card__text {
+  opacity: 0.7;
+}
+
+/*  Lab 2 Task 1.5 Add emoji */
+
+.mission-block__emoji-block {
+  position: relative;
+
+  overflow: hidden;
+  padding: var(--spacing--8x) 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing--8x);
+}
+
+.mission-block__emoji-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 40%,
+    var(--color-background) 100%
+  );
+}
+
+.mission-block__emoji {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  font-size: var(--font-size--2x);
+  letter-spacing: var(--spacing--16x);
+  animation: running-emoji 10s linear infinite;
+}
+
+@keyframes running-emoji {
+  0% {
+    transform: translateX(-52%);
+  }
+  100% {
+    transform: translateX(52%);
+  }
+}
+
+.founders-block {
+  transition: all 0.3s ease-in-out;
+}
+
+.founders-block:focus {
+  transform: translateX(2%);
 }
 
 .founders__table {
@@ -237,7 +407,7 @@ Works almost the same as fixed anyway */
 .founders__table td {
   text-align: center;
   vertical-align: middle;
-  padding: var(--spacing);
+  padding: var(--spacing--4x);
 }
 
 .founders__header {
@@ -270,7 +440,7 @@ Works almost the same as fixed anyway */
 }
 
 .founders__icon {
-  width: var(--icon-size--2x);
+  width: var(--icon-size--4x);
 }
 
 .footer {
@@ -292,30 +462,48 @@ Works almost the same as fixed anyway */
 
 .footer__logo a {
   font-size: var(--font-size--2x);
+  font-size: var(--font-size--4x);
 }
 
 .footer__logo {
   font-weight: bold;
+
   color: var(--color-primary);
 }
 
-.footer__logo,
 .footer__nav,
 .footer__contact {
   flex: 1 1 var(--size--4x);
   min-width: var(--size--4x);
 }
 
-.footer__nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
-}
-
-.footer__nav-link {
-  text-decoration: none;
+.footer__logo {
+  flex: 1 1 var(--size--2x);
+  min-width: var(--size--2x);
 }
 
 .footer__contact-item {
   margin-bottom: var(--spacing);
+}
+
+/*  Lab 2 Task 1.4 Enhance text on select by 10% */
+
+.footer__contact-item a {
+  text-decoration: none;
+  color: hsl(245, 19%, 73%);
+  transition: all 2s ease-in-out;
+}
+
+.footer__contact-item a::selection {
+  background-color: var(--color-accent--selection);
+  color: hsl(246, 19%, 83%);
+}
+
+.footer__contact-item a:focus {
+  background-color: hsla(255, 70%, 66%, 0.6);
+  color: hsl(246, 19%, 83%);
+  font-size: 110%;
+  padding: var(--spacing) var(--spacing--2x);
+  border-radius: var(--spacing);
+  outline: none;
 }
