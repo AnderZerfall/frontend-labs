@@ -1,38 +1,39 @@
 :root {
-    
-    --color-primary: #ffffff;
-    --color-accent: #8C6EE5;
-    --color-secondary: #232629;
-    --color-background: #1A1D1F;
+  --color-primary: #ffffff;
+  --color-accent: #8c6ee5;
+  --color-secondary: #232629;
+    --color-border: #2d3136;
+  --color-background: #1a1d1f;
 
-    --color-text: #aeacc6;
-    --color-text--accent: #ffffff;
-    --color-text--inv: #1A1D1F;
+  --color-text: #aeacc6;
+  --color-text--secondary:rgba(174, 172, 198, 0.7);
+  --color-text--accent: #ffffff;
+  --color-text--inv: #1a1d1f;
 
-    --font-family: 'Arial, sans-serif';
+  --font-family: "Arial, sans-serif";
 
-    --font-size: 1rem;
-    --font-size--2x: 2rem;
-    --font-size--4x: 4rem;
-    --font-size--8x: 8rem;
-    --font-size--16x: 16rem;
+  --font-size: 1rem;
+  --font-size--2x: 2rem;
+  --font-size--4x: 4rem;
+  --font-size--8x: 8rem;
+  --font-size--16x: 16rem;
 
-    --spacing: 0.5rem;
-    --spacing--2x: 1rem;
-    --spacing--4x: 2rem;
-    --spacing--8x: 4rem;
-    --spacing--16x: 8rem;
-    --spacing--32x: 16rem;
+  --spacing: 0.5rem;
+  --spacing--2x: 1rem;
+  --spacing--4x: 2rem;
+  --spacing--8x: 4rem;
+  --spacing--16x: 8rem;
+  --spacing--32x: 16rem;
 
-    --icon-size: 12px;
-    --icon-size--2x: 24px;
-    --icon-size--4x: 48px;
+  --icon-size: 12px;
+  --icon-size--2x: 24px;
+  --icon-size--4x: 48px;
 
-    --size: 60px;
-    --size--2x: 120px;
-    --size--4x: 240px;
-    --size--8x: 480px;
-    --size--10x: 600px;
-    --size--16x: 960px;
-    --size--32x: 1920px;
+  --size: 60px;
+  --size--2x: 120px;
+  --size--4x: 240px;
+  --size--8x: 480px;
+  --size--10x: 600px;
+  --size--16x: 960px;
+  --size--32x: 1920px;
 }

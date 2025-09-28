@@ -41,21 +41,25 @@ h2 {
   font-size: var(--font-size--4x);
 }
 
+/*  Lab 2 Task 2.3 Makes titles of the projects bigger  and bolder */
 h3 {
   font-size: var(--font-size--2x);
 }
 
-input, select, textarea {
-    outline: none;
-    border: none;
-    background-color: var(--color-secondary);
-    padding: var(--spacing);
-    border-radius: var(--spacing);
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background-color: var(--color-secondary);
+  padding: var(--spacing);
+  border-radius: var(--spacing);
 }
 
-input::placeholder, textarea::placeholder {
-    color: var(--color-text);
-    opacity: 0.7;
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text);
+  opacity: 0.7;
 }
 
 .main {
@@ -75,7 +79,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .button {
-    border: none;
+  border: none;
   width: fit-content;
   padding: var(--spacing--2x) var(--spacing--4x);
   font-size: var(--font-size);
@@ -98,6 +102,12 @@ input::placeholder, textarea::placeholder {
 
   color: var(--color-text--accent);
 }
+
+/*  Lab 2 Task 2.1 Make logo fixed on top.
+Well, I use the same header across all pages, which already includes
+the name of the startup and its logo. It has position sticky, but only because it looks
+more organic with the design. With 'fixed' the header would overlap the banner text, which isn't good.
+Works almost the same as fixed anyway */
 
 .header {
   margin: 0 auto;
@@ -183,13 +193,24 @@ input::placeholder, textarea::placeholder {
   flex: 1;
   display: flex;
   padding: var(--spacing--2x);
-   border-radius: var(--spacing);
+  border-radius: var(--spacing);
+}
+
+.card__headline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.card__subtitle {
+  font-size: var(--font-size);
+  color: var(--color-text--secondary);
 }
 
 .mission-block .card {
   position: relative;
-   max-height: 200px;
-    background-color: var(--color-secondary);
+  max-height: 200px;
+  background-color: var(--color-secondary);
   overflow: hidden;
   min-width: var(--size--2x);
 }

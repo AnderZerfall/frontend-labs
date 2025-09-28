@@ -2,37 +2,98 @@
   padding: 0;
 }
 
+.banner-block {
+  margin-bottom: var(--spacing--2x);
+}
+
 .projects-block__cards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing--8x);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--spacing--2x);
   align-items: center;
 }
+
+/*  Lab 2 Task 2.2 Make a border for a project card with solid line,
+except for the bottom line (make it doudle) */
 
 .projects-block__card {
   flex: 1;
   width: 100%;
   gap: var(--spacing--8x);
+  padding: var(--spacing--8x);
   justify-content: space-between;
   align-items: center;
   max-height: none;
+  border: 2px solid var(--color-border);
+  border-bottom: double 4px var(--color-border);
 }
 
-.card__content {
+.projects-block__card .button {
+  background-color: var(--color-border);
+  transition: all 0.3s ease-in-out;
+}
+
+/*  Lab 2 Task 2.3 Make titles italic, bolder and bigger (see in style.css) */
+
+.projects-block__card .card__title {
+  font-style: italic;
+}
+
+.projects-block__card:hover {
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
+  border-color: var(--color-accent);
+}
+
+.projects-block .card__content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing--2x);
+  gap: var(--spacing--8x);
 }
 
-.card__list {
+.projects-block .card__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
   padding-left: var(--spacing--2x);
 }
 
-.card__image {
+/* Lab 2 Task 2.4 Change image to grayscale
+(but I did the opposite, because it looks more natural with my design)
+on hover*/
+
+.projects-block .card__image {
   max-width: var(--size--10x);
+  filter: grayscale(1);
   height: auto;
   border-radius: var(--spacing--2x);
   overflow: hidden;
+  border: 2px solid var(--color-border);
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-block__card:hover .card__image {
+  filter: grayscale(0);
   border: 2px solid var(--color-accent);
-  box-shadow: var(--spacing--2x) var(--spacing--2x)0 var(--color-accent);
+  box-shadow: var(--spacing) var(--spacing) 0 var(--color-accent);
+}
+
+.projects-block__card:hover .card__title {
+  color: var(--color-text--accent);
+}
+
+/*  Lab 2 Task 2.5 Mark unvisited links with other color */
+
+.projects-block__card:hover .button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.projects-block__card:hover a:visited {
+  background-color: var(--color-border);
+  color: var(--color-text--secondary);
+}
+
+.projects-block__card:hover a:link {
+  background-color: var(--color-accent);
 }

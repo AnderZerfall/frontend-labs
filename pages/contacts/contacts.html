@@ -45,7 +45,7 @@
                   >Projects</a
                 >
               </li>
-               <li class="nav__item">
+              <li class="nav__item">
                 <a
                   href="#reviews"
                   title="Go to Reviews Block"
@@ -54,7 +54,7 @@
                   >Reviews</a
                 >
               </li>
-               <li class="nav__item">
+              <li class="nav__item">
                 <a
                   href="/pages/projects/profile.html"
                   title="Go to Your Profile Page"
@@ -100,14 +100,28 @@
         <div class="container contact-block__container">
           <form class="contact-block__form" action="" method="POST" novalidate>
             <!-- Grouped Personal Information -->
-            <fieldset class="contact-block__form-group contact-block__personal-info">
+            <fieldset
+              class="contact-block__form-group contact-block__personal-info"
+            >
               <legend>Personal Information</legend>
 
               <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" placeholder="John Doe" name="fullName" required />
+              <input
+                type="text"
+                id="fullName"
+                placeholder="John Doe"
+                name="fullName"
+                required
+              />
 
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john.doe@example.com"
+                required
+              />
 
               <label for="age">Age</label>
               <input
@@ -163,6 +177,7 @@
               </select>
 
               <!-- Detailed Text -->
+
               <label for="details">Details</label>
               <textarea
                 id="details"
@@ -184,7 +199,12 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="contact-block__button button button--accent">Submit Feedback</button>
+            <button
+              type="submit"
+              class="contact-block__button button button--accent"
+            >
+              Submit Feedback
+            </button>
           </form>
         </div>
       </section>
