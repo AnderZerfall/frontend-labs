@@ -62,6 +62,10 @@ except for the bottom line (make it doudle) */
 (but I did the opposite, because it looks more natural with my design)
 on hover*/
 
+.point {
+  float: left;
+}
+
 .projects-block .card__image {
   max-width: var(--size--10x);
   filter: grayscale(1);

@@ -119,6 +119,64 @@ textarea::placeholder {
   color: var(--color-text--inv);
 }
 
+.header__burger-icon {
+  display: none;
+  position: relative;
+}
+
+.header__burger-icon::after {
+  content: "🍔";
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  font-size: var(--font-size--2x);
+}
+.header__burger-icon[is-opened="true"]::after {
+  content: "😋";
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  font-size: var(--font-size--2x);
+}
+
+.header__burger-menu[is-opened="false"] {
+  display: none;
+}
+
+.header__burger-menu[is-opened="true"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  gap: var(--spacing--4x);
+}
+
+.header__burger-menu .header__nav .nav__list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing--4x);
+}
+
+.header__burger-menu .header__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.header__burger-menu .header__cta .button {
+  padding: var(--spacing--2x) var(--spacing--4x);
+}
+
 /*  Lab 2 Task 2.1 Make logo fixed on top.
 Well, I use the same header across all pages, which already includes
 the name of the startup and its logo. It has position sticky, but only because it looks
@@ -196,6 +254,44 @@ Works almost the same as fixed anyway */
   border-radius: var(--spacing--2x);
 }
 
+[data-link-name] {
+  position: relative;
+}
+
+#mission-link:hover::before {
+  content: "🎯";
+  display: block;
+  position: absolute;
+  left: calc(-1 * var(--spacing--3x));
+}
+
+[data-link-name="founders"]:hover::before {
+  content: "💻";
+  display: block;
+  position: absolute;
+  left: calc(-1 * var(--spacing--3x));
+}
+
+#projects-link:hover::before {
+  content: "🚀";
+  display: block;
+  position: absolute;
+  left: calc(-1 * var(--spacing--3x));
+}
+
+[data-link-name="reviews"]:hover::before {
+  content: "⭐";
+  display: block;
+  position: absolute;
+  left: calc(-1 * var(--spacing--3x));
+}
+
+#profile-link:hover::before {
+  content: "👦🏻";
+  display: block;
+  position: absolute;
+  left: calc(-1 * var(--spacing--3x));
+}
 /*  Lab 2 Task 1.1 Position absolute for the logo, 0 from top */
 
 .hero-block__headline {
@@ -410,6 +506,16 @@ Works almost the same as fixed anyway */
   padding: var(--spacing--4x);
 }
 
+.founders__table td:nth-child(3) {
+  max-width: var(--size--4x);
+}
+
+.founders__table .founders__desc:nth-child(3) {
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 .founders__header {
   text-align: center;
   vertical-align: middle;
@@ -471,17 +577,6 @@ Works almost the same as fixed anyway */
   color: var(--color-primary);
 }
 
-.footer__nav,
-.footer__contact {
-  flex: 1 1 var(--size--4x);
-  min-width: var(--size--4x);
-}
-
-.footer__logo {
-  flex: 1 1 var(--size--2x);
-  min-width: var(--size--2x);
-}
-
 .footer__contact-item {
   margin-bottom: var(--spacing);
 }
@@ -506,4 +601,30 @@ Works almost the same as fixed anyway */
   padding: var(--spacing) var(--spacing--2x);
   border-radius: var(--spacing);
   outline: none;
+}
+
+.founders__desc::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+  height: var(--icon-size);
+}
+
+/* track of the scrollbar */
+.founders__desc::-webkit-scrollbar-track,
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* thumb of the scrollbar */
+.founders__desc::-webkit-scrollbar-thumb,
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: var(--icon-size);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* thumb hover effect */
+.founders__desc::-webkit-scrollbar-thumb:hover,
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
 }

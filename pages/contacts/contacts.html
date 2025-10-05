@@ -6,6 +6,8 @@
     <title>Fukuro - Contacts</title>
     <link rel="stylesheet" href="../../assets/styles/styles.css" />
     <link rel="stylesheet" href="./contacts.css" />
+    <link rel="stylesheet" href="../../assets/styles/responsive.css" />
+    <script src="../../assets/scripts/header.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -16,11 +18,14 @@
           <a href="/" aria-label="Go to homepage" class="header__logo"
             >FUKURO</a
           >
+          <div class="header__burger-icon"></div>
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a
-                  href="../../index.html#mission"
+                  id="mission-link"
+                  href="#mission"
+                  data-link-name="mission"
                   title="Go to Our Mission Block"
                   aria-label="Our Mission - Click to read about Fukuro's mission"
                   class="nav__link"
@@ -29,7 +34,9 @@
               </li>
               <li class="nav__item">
                 <a
-                  href="../../index.html#founders"
+                  id="founders-link"
+                  href="#founders"
+                  data-link-name="founders"
                   title="Go to Founders Block"
                   aria-label="Founders - Click to read about Fukuro's founders"
                   class="nav__link"
@@ -38,7 +45,9 @@
               </li>
               <li class="nav__item">
                 <a
-                  href="../projects/projects.html"
+                  id="projects-link"
+                  data-link-name="projects"
+                  href="/pages/projects/projects.html"
                   title="Go to Projects Page"
                   aria-label="Projects - Click to see our recent projects"
                   class="nav__link"
@@ -47,7 +56,9 @@
               </li>
               <li class="nav__item">
                 <a
+                  id="reviews-link"
                   href="#reviews"
+                  data-link-name="reviews"
                   title="Go to Reviews Block"
                   aria-label="Reviews - Click to see our customer reviews"
                   class="nav__link"
@@ -56,6 +67,8 @@
               </li>
               <li class="nav__item">
                 <a
+                  id="profile-link"
+                  data-link-name="profile"
                   href="/pages/projects/profile.html"
                   title="Go to Your Profile Page"
                   aria-label="Profile - Click to see your profile"
@@ -67,14 +80,14 @@
           </nav>
           <div class="header__cta">
             <a
-              href="contacts.html"
+              href="/pages/contacts/contacts.html"
               title="Go to Contact Page"
               aria-label="Contact - Click to visit contact page"
               class="header__cta-button button button--secondary"
               >Contact</a
             >
             <a
-              href="../signup/signup.html"
+              href="/pages/signup/signup.html"
               title="Go to Sign Up Page"
               aria-label="Sign Up - Click to go to sign up page"
               class="header__cta-button button button--primary"
@@ -83,6 +96,84 @@
           </div>
         </div>
       </header>
+
+      <div class="header__burger-menu" is-opened="false">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                id="mission-link"
+                href="#mission"
+                data-link-name="mission"
+                title="Go to Our Mission Block"
+                aria-label="Our Mission - Click to read about Fukuro's mission"
+                class="nav__link"
+                >Our Mission</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                id="founders-link"
+                href="#founders"
+                data-link-name="founders"
+                title="Go to Founders Block"
+                aria-label="Founders - Click to read about Fukuro's founders"
+                class="nav__link"
+                >Founders</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                id="projects-link"
+                data-link-name="projects"
+                href="/pages/projects/projects.html"
+                title="Go to Projects Page"
+                aria-label="Projects - Click to see our recent projects"
+                class="nav__link"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                id="reviews-link"
+                href="#reviews"
+                data-link-name="reviews"
+                title="Go to Reviews Block"
+                aria-label="Reviews - Click to see our customer reviews"
+                class="nav__link"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                id="profile-link"
+                data-link-name="profile"
+                href="/pages/projects/profile.html"
+                title="Go to Your Profile Page"
+                aria-label="Profile - Click to see your profile"
+                class="nav__link"
+                >Profile</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__cta">
+          <a
+            href="/pages/contacts/contacts.html"
+            title="Go to Contact Page"
+            aria-label="Contact - Click to visit contact page"
+            class="header__cta-button button button--secondary"
+            >Contact</a
+          >
+          <a
+            href="/pages/signup/signup.html"
+            title="Go to Sign Up Page"
+            aria-label="Sign Up - Click to go to sign up page"
+            class="header__cta-button button button--primary"
+            >Sign Up</a
+          >
+        </div>
+      </div>
 
       <!-- Banner Section -->
 
