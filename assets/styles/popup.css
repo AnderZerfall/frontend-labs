@@ -1,0 +1,40 @@
+.popup {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing--2x);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(35, 38, 41, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--spacing);
+  padding: var(--spacing--3x);
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.popup-trigger {
+    position: relative;
+}
+
+.popup.is-popup-open {
+  display: flex;
+}
+
+.user-answer {
+    background-color: var(--color-background);
+    padding: var(--spacing) var(--spacing--2x);
+}
+
+.check-btn {
+    width: 100%;
+    padding: var(--spacing) var(--spacing--2x);
+}
+
+.result {
+    font-size: 0.8rem;
+    font-weight: 300;
+}

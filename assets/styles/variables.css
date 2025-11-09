@@ -1,6 +1,8 @@
 :root {
   --color-primary: #ffffff;
   --color-accent: #8c6ee5;
+   --color-success: #7ab856;
+    --color-alert: #e56e6e;
   --color-accent--selection: hsla(255, 70%, 66%, 0.5);
   --color-secondary: #232629;
   --color-border: #2d3136;

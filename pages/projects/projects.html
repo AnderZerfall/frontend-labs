@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../../assets/styles/styles.css" />
     <link rel="stylesheet" href="./projects.css" />
     <link rel="stylesheet" href="../../assets/styles/responsive.css" />
+    <link rel="stylesheet" href="../../assets/styles/slider.css" />
     <script src="../../assets/scripts/header.js" defer></script>
+    <script src="../../assets/scripts/slider.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -189,119 +191,128 @@
 
       <section class="content-block projects-block">
         <div class="container projects-block__container">
-          <div class="projects-block__cards">
-            <article class="card projects-block__card">
-              <div class="card__content">
-                <div class="card__headline">
-                  <h3 class="card__title">
-                    Doodly Do - Next.js online drawing board
-                  </h3>
-                  <span class="card__subtitle"
-                    ><i>Ukraine</i><span class="point">📍</span></span
+          <div class="projects-block__cards slider">
+            <button class="slider-previous-button slider-button">⪡</button>
+            <div class="slider-container">
+              <article class="card projects-block__card slide">
+                <div class="card__content">
+                  <div class="card__headline">
+                    <h3 class="card__title">
+                      Doodly Do - Next.js online drawing board
+                    </h3>
+                    <span class="card__subtitle"
+                      ><i>Ukraine</i><span class="point">📍</span></span
+                    >
+                  </div>
+                  <div class="card__description">
+                    <ol class="card__list card-list">
+                      <li class="card-list__item">Very Beginner Friendly</li>
+                      <li class="card-list__item">
+                        Fully written with Next.js using Firebase as a drawing
+                        storage
+                      </li>
+                      <li class="card-list__item">Real time <b>update</b></li>
+                      <li class="card-list__item">Open <u>Source</u></li>
+                      <li class="card-list__item">
+                        Coloborative <em>system</em>
+                      </li>
+                    </ol>
+                  </div>
+                  <a
+                    href="https://doodly-do-next-js.vercel.app/"
+                    class="card__button button button--accent"
+                    >Go to Doodly</a
                   >
                 </div>
-                <div class="card__description">
-                  <ol class="card__list card-list">
-                    <li class="card-list__item">Very Beginner Friendly</li>
-                    <li class="card-list__item">
-                      Fully written with Next.js using Firebase as a drawing
-                      storage
-                    </li>
-                    <li class="card-list__item">Real time <b>update</b></li>
-                    <li class="card-list__item">Open <u>Source</u></li>
-                    <li class="card-list__item">
-                      Coloborative <em>system</em>
-                    </li>
-                  </ol>
+                <div class="image-wrapper card__image">
+                  <img
+                    src="/assets/images/projects/doodly.png"
+                    alt="Doodly Do"
+                    class="image-wrapper__image mission-block__img"
+                  />
                 </div>
-                <a
-                  href="https://doodly-do-next-js.vercel.app/"
-                  class="card__button button button--accent"
-                  >Go to Doodly</a
-                >
-              </div>
-              <div class="image-wrapper card__image">
-                <img
-                  src="/assets/images/projects/doodly.png"
-                  alt="Doodly Do"
-                  class="image-wrapper__image mission-block__img"
-                />
-              </div>
-            </article>
-            <article class="card projects-block__card">
-              <div class="card__content">
-                <div class="card__headline">
-                  <h3 class="card__title">K-lingua - Landing</h3>
-                  <span class="card__subtitle"
-                    ><i>Czech</i><span class="point">📍</span></span
+              </article>
+              <article class="card projects-block__card slide">
+                <div class="card__content">
+                  <div class="card__headline">
+                    <h3 class="card__title">K-lingua - Landing</h3>
+                    <span class="card__subtitle"
+                      ><i>Czech</i><span class="point">📍</span></span
+                    >
+                  </div>
+                  <div class="card__description">
+                    <ol class="card__list card-list">
+                      <li class="card-list__item">Hand-crafted design</li>
+                      <li class="card-list__item">
+                        Supports 2 language modes: Czech and English
+                      </li>
+                      <li class="card-list__item">Fully animated experience</li>
+                      <li class="card-list__item">
+                        HTML & CSS & JS - no React, good for SEO
+                      </li>
+                      <li class="card-list__item">Open Source</li>
+                    </ol>
+                  </div>
+                  <a
+                    href="https://anderzerfall.github.io/K-lingua-website/index.html"
+                    class="card__button button button--accent"
+                    >Go to K-lingua</a
                   >
                 </div>
-                <div class="card__description">
-                  <ol class="card__list card-list">
-                    <li class="card-list__item">Hand-crafted design</li>
-                    <li class="card-list__item">
-                      Supports 2 language modes: Czech and English
-                    </li>
-                    <li class="card-list__item">Fully animated experience</li>
-                    <li class="card-list__item">
-                      HTML & CSS & JS - no React, good for SEO
-                    </li>
-                    <li class="card-list__item">Open Source</li>
-                  </ol>
+                <div class="image-wrapper card__image">
+                  <img
+                    src="/assets/images/projects/klingua.png"
+                    alt="Klingua Landing"
+                    class="image-wrapper__image mission-block__img"
+                  />
                 </div>
-                <a
-                  href="https://anderzerfall.github.io/K-lingua-website/index.html"
-                  class="card__button button button--accent"
-                  >Go to K-lingua</a
-                >
-              </div>
-              <div class="image-wrapper card__image">
-                <img
-                  src="/assets/images/projects/klingua.png"
-                  alt="Klingua Landing"
-                  class="image-wrapper__image mission-block__img"
-                />
-              </div>
-            </article>
-            <article class="card projects-block__card">
-              <div class="card__content">
-                <div class="card__headline">
-                  <h3 class="card__title">
-                    Github Kanban - Drag&Drop Issue Manager
-                  </h3>
-                  <span class="card__subtitle"
-                    ><i>Ukraine</i><span class="point">📍</span></span
+              </article>
+              <article class="card projects-block__card slide">
+                <div class="card__content">
+                  <div class="card__headline">
+                    <h3 class="card__title">
+                      Github Kanban - Drag&Drop Issue Manager
+                    </h3>
+                    <span class="card__subtitle"
+                      ><i>Ukraine</i><span class="point">📍</span></span
+                    >
+                  </div>
+                  <div class="card__description">
+                    <ol class="card__list card-list">
+                      <li class="card-list__item">
+                        Just pass a link to a repository
+                      </li>
+                      <li class="card-list__item">
+                        Smooth drag & drop implementation
+                      </li>
+                      <li class="card-list__item">
+                        React powered, no backend needed
+                      </li>
+                      <li class="card-list__item">
+                        Simple, yet friendly design
+                      </li>
+                      <li class="card-list__item">
+                        Integrated with Github API
+                      </li>
+                    </ol>
+                  </div>
+                  <a
+                    href="https://fukuro-kanban.netlify.app/"
+                    class="card__button button button--accent"
+                    >Go to Kanban</a
                   >
                 </div>
-                <div class="card__description">
-                  <ol class="card__list card-list">
-                    <li class="card-list__item">
-                      Just pass a link to a repository
-                    </li>
-                    <li class="card-list__item">
-                      Smooth drag & drop implementation
-                    </li>
-                    <li class="card-list__item">
-                      React powered, no backend needed
-                    </li>
-                    <li class="card-list__item">Simple, yet friendly design</li>
-                    <li class="card-list__item">Integrated with Github API</li>
-                  </ol>
+                <div class="image-wrapper card__image">
+                  <img
+                    src="/assets/images/projects/kanban.png"
+                    alt="Github Kanban"
+                    class="image-wrapper__image mission-block__img"
+                  />
                 </div>
-                <a
-                  href="https://fukuro-kanban.netlify.app/"
-                  class="card__button button button--accent"
-                  >Go to Kanban</a
-                >
-              </div>
-              <div class="image-wrapper card__image">
-                <img
-                  src="/assets/images/projects/kanban.png"
-                  alt="Github Kanban"
-                  class="image-wrapper__image mission-block__img"
-                />
-              </div>
-            </article>
+              </article>
+            </div>
+
+            <button class="slider-next-button slider-button">⪢</button>
           </div>
         </div>
       </section>

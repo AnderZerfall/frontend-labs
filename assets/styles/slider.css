@@ -1,0 +1,50 @@
+/* NOTE: I've changed the max-height from 20 to 30, because it looks more appealing that way */
+
+.slide {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 100%;
+  transition: all 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: scale(0.9);
+  max-height: 30vw; 
+}
+
+
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   transition: all 0.5s ease-in-out;
+}
+
+.slider-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: clip;
+  width: 100%;
+}
+
+.current-slide {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider-button:hover {
+  background-color: var(--color-accent);
+  border: 0;
+  color: white;
+  transform: scale(1.05);
+}
+
+.slider-button {
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  color: var(--color-accent);
+    transition: all 0.5s ease;
+    transform: scale(1);
+}

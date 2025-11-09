@@ -1,0 +1,31 @@
+.tooltip-trigger {
+  position: relative;
+    transition: all 0.5s ease-in-out;
+      border-radius: var(--spacing);
+       border: 1px solid transparent;
+}
+
+.tooltip-trigger:hover {
+  background-color: var(--color-secondary);
+  padding: var(--spacing);
+   border-radius: var(--spacing);
+   border: 1px solid var(--color-border);
+}
+
+.tooltip {
+  position: absolute;
+  left: 0;
+  bottom: -110%;
+  background-color: var(--color-secondary);
+  padding: var(--spacing) var(--spacing--2x);
+  border-radius: var(--spacing);
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.is-tooltip-open {
+  opacity: 1;
+  transform: translateY(0);
+}

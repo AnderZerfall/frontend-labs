@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../../assets/styles/styles.css" />
     <link rel="stylesheet" href="./contacts.css" />
     <link rel="stylesheet" href="../../assets/styles/responsive.css" />
+    <link rel="stylesheet" href="../../assets/styles/tooltip.css" />
     <script src="../../assets/scripts/header.js" defer></script>
+    <script src="../../assets/scripts/tooltip.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -269,7 +271,12 @@
 
               <!-- Detailed Text -->
 
-              <label for="details">Details</label>
+              <label for="details" class=" tooltip-trigger">Details
+                   <div class="tooltip">
+              Thank you for your time! Please specify the purpose of your
+              request.
+            </div>
+              </label>
               <textarea
                 id="details"
                 name="details"
@@ -278,8 +285,13 @@
                 placeholder="Provide more details here..."
                 cols="40"
                 style="max-width: 100%; max-height: 200px"
-              ></textarea>
+              >
+            </textarea>
+                     <!-- Detailed Tooltip -->
+                      
             </fieldset>
+
+         
 
             <!-- Consent -->
             <div class="contact-block__consent">
